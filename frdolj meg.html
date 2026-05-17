@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>💖</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      overflow: hidden;
+
+      font-family: Arial, sans-serif;
+
+      background: linear-gradient(
+        135deg,
+        #ffb6d9,
+        #ff8fc7,
+        #ffc2e2
+      );
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 30px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      text-shadow: 0 0 15px rgba(255,255,255,0.7);
+      animation: fadeIn 2s ease;
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(255,255,255,0.7);
+      font-size: 30px;
+      animation: float 6s linear infinite;
+    }
+
+    .rose {
+      position: absolute;
+      font-size: 35px;
+      animation: float 8s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>
+      Fordulj meg 💖
+    </h1>
+  </div>
+
+  <div class="heart" style="left:10%; animation-delay:0s;">💙</div>
+  <div class="heart" style="left:25%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:40%; animation-delay:4s;">💙</div>
+  <div class="heart" style="left:60%; animation-delay:1s;">💖</div>
+  <div class="heart" style="left:80%; animation-delay:3s;">💙</div>
+
+  <div class="rose" style="left:15%; animation-delay:1s;">🌹</div>
+  <div class="rose" style="left:50%; animation-delay:5s;">🌹</div>
+  <div class="rose" style="left:75%; animation-delay:2s;">🌹</div>
+
+</body>
+
+</html>
